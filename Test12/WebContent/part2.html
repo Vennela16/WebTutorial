@@ -9,22 +9,22 @@
 <body>
     <table style="width:100%">
         <tr>
-            <th><strong>Back:</strong> <a href="part1.html">Introduction to Web Content Mining</a></th><th><strong>Up:</strong> <a href="First.html">Index</a></th><th><strong>Next:</strong><a href="part3.html">Implementation of Web Content Mining</a></th>
+            <th><strong>Back:</strong> <a href="part1.html">Introduction to Web Content Mining</a></th><th><strong>Up:</strong> <a href="First.html">Index</a></th><th><strong>Next:</strong> <a href="part3.html">Performing Web Content Mining</a></th>
         </tr>
 	</table>
 	<h1 class="centered-text"><strong>Tools Used for Web Content Mining</strong></h1>
     <h3>Overview of Tools</h3>
     <p class="tab">
 	In the field of web content mining, the types of software you can use to accomplish the scraping and examination vary in their type- there are scripting languages built from the ground up to serve the purpose of web content mining, modules
-	for existing languages that implement scraping capability, there are all-in-one GUI interfaces built in a different language to accomplish the same goal, and of course there are command line programs that are less elegant visually that also 
-	accomplish this goal. 
+	for existing languages that implement scraping capability, all-in-one GUI interfaces built in a different language to accomplish the same goal, and of course there are command line programs that are less elegant visually that also 
+	accomplish this goal. A very wide spectrum of possibilities.
 	</p>
 
 	<h3>Scrapy</h3>
-	<div class="left">
-    <figure style="text-align: left">
+	<div class="center">
+    <figure style="text-align: center">
         <img src="scrapy.png" width="300px">
-        <figcaption style="text-align: left">Scrapy logo</figcaption>
+        <figcaption style="text-align: center">Scrapy logo</figcaption>
     </figure>   
     </div>
 	<p class="tab">
@@ -33,23 +33,23 @@
 	calls <i>spiders</i>- though the name might sound creepy, a spider is really just a python file that you point in the direction of the URL you'd like to scrape and define within its parse function what sort of data you want 
 	from the URL. Below, there's a screenshot showing an example spider, the command to run it, and its output.
 	</p>
-	<div class="left">
-    <figure style="text-align: left">
-        <img src="example.png" width="300px">
-        <figcaption style="text-align: left">Example scraper</figcaption>
+	<div class="center">
+    <figure style="text-align: center">
+        <img src="example.png" width="706px">
+        <figcaption style="text-align: center">Example scraper</figcaption>
     </figure>   
     </div>
 	<p class="tab">
 	In short, define the URL to scrape in the start_urls[] array, define the attributes to scrape in the prase() function, add in some handling for if there's a following page after the URL, run it in your command line, and voila,
-	you have in your hands a JSON file that has scraped the data you're interested in far faster than you can do by hand. Scrapy can handle CSS identifiers as shown here, but it can also target specific elements of a webpage via 
+	you have in your hands a JSON file that has scraped the data you're interested in far faster than you can do by hand. Scrapy can handle CSS tags as shown here, but it can also target specific elements of a webpage via 
 	their class (give me all instances of this class on this webpage) and it can cover XPath expressions as well. It's highly customizable, versatile, and pretty simple to use, lending to its popularity.
 	</p>
 	
 	<h3>Octoparse</h3>
-	<div class="left">
-	<figure style="text-align: left">
+	<div class="center">
+	<figure style="text-align: center">
         <img src="octoparse.png" width="300px">
-        <figcaption style="text-align: left">Octoparse logo</figcaption>
+        <figcaption style="text-align: center">Octoparse logo</figcaption>
     </figure>   
     </div>
 	<p class="tab">
@@ -69,8 +69,8 @@
 	</p>
 	<div class="left">
 	<figure style="text-align: left">
-        <img src="portia-follow-patterns.png" width="300px">
-        <figcaption style="text-align: left">Example visualization. Neatly displays site to be crawled, rules of the crawler, regular expression arguments.</figcaption>
+        <img src="portia-follow-patterns.png" width="1500px">
+        <figcaption style="text-align: center">Example visualization. Neatly displays site to be crawled, rules of the crawler, regular expression arguments.</figcaption>
     </figure>   
 	</div>
 	<p class="tab">
